@@ -17,7 +17,8 @@ p{
 /* ------------- css for id ------------- */
 /* ---- self-intro area ---- */
 #author-img{
+  width:30%;
   display:block;
   object-fit: cover;
-  border-radius:25%;
+  border-radius:50%;
 }
