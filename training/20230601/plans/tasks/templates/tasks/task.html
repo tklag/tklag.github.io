@@ -1,0 +1,27 @@
+{% extends "tasks/layout.html" %}
+
+{% block body %}
+<h1>Task</h1>
+
+
+<ul>
+    {% for task in tasks %}
+    <li>{{ task }}</li>
+    {% endfor %}
+</ul>
+
+
+<form action="{% url 'task' %}" method="post">
+    {% csrf_token%}
+    name:
+    <input type="text" name="name">
+    <br>
+    details:
+    <input type="text" name="details">
+    <br>
+    duration:
+    <input type="text" name="duration">
+    <input type="submit">
+</form>
+
+{% endblock %}
