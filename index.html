@@ -8,27 +8,168 @@
     </head>
     <body>
         <header>
-            <h1>Kaz</h1>
-            <div id="">
-                <img id="author-img" src="https://slowlife-abroad.com/wp-content/uploads/2023/12/profile_icon.png">
+            <img src="resources/icon/hamburger-menu.svg" id="menu-icon">
+            <div id="author-info">
+                <img id="author-img" src="resources/img/profile_icon.png">
                 <p id="author-name">Kaz</p>
-                <p id="self-intro">This is my self-introduction.</p>
-            </div>
-            <div id="activities">
-                <div id="certificates">
-                    <p><a href="PortfolioPrj/Illustrator/index.html">freeCodeCamp HTML</a></p>
+                <p class="author-brief-intro" id="title">
+                    <span class="gradation">Web Designer & Developer</span> 
+                </p>
+                <p class="author-brief-intro">
+                    Student at Flinders University in Adelaide, Australia.</br>
+                    HTML / CSS / JavaScript
+                </p>
+                <div id="contacts">
+                    <img>
+                    <fieldset id="contact-field">
+                        <legend>Contact</legend>
+                        <p>kazxkaz21@gmail.com</p>
+                    </fieldset>
                 </div>
             </div>
         </header>
         <main>
-            <div class="experience" id="education-experience"></div>
-            <div class="experience" id="working-experience"></div>
-            <div class="portfolio-prj" id="prj-1"></div>
-            <div class="portfolio-prj" id="prj-2"></div>
-            <div class="portfolio-prj" id="prj-3"></div>
+            <div id="menu-bar-background">
+                <div id="menu-bar">
+                    <div id="menu-close-btn" onclick="menuCloseOpen()">✕ close</div>
+                    <ul id="menu-group">
+                        <li><a href="#item-1" onclick="menuCloseOpen()">Education</a></li>
+                        <li><a href="#item-2" onclick="menuCloseOpen()">Work Experience</a></li>
+                        <!--<li><a href="#item-3" onclick="menuCloseOpen()">Portfolio</a></li>-->
+                        <li><a href="#item-4" onclick="menuCloseOpen()">Certificates</a></li>
+                        <li><a href="#item-5" onclick="menuCloseOpen()">Language</a></li>
+                    </ul>
+                </div>
+                <div id="menu-bar-otherarea" onclick="menuCloseOpen()"></div>
+            </div>
+            <div class="items" id="education-experience">
+                <div class="h2-title">
+                    <div class="h2-blocks">
+                        <div class="h2-left-top-block"></div>
+                        <div class="h2-right-bottom-block"></div>
+                    </div>
+                    <h2 id="item-1">Education</h2>
+                </div>
+                <div class="list-contents-block">
+                    <div class="list-contents">
+                        <div>
+                            <div class="list-circle"></div>
+                            <div class="list-vertical-line"></div>
+                            <div class="list-vertical-line"></div>
+                        </div>
+                        <div class="list-content-item">
+                            <p>Kumamoto University (Kumamoto, Japan) - Bachelor</br>
+                                04/2011 ~ 03/2015
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="list-contents">
+                        <div>
+                            <div class="list-circle current-status"></div>
+                            <div class="list-vertical-line"></div>
+                            <div class="list-vertical-line"></div>
+                        </div>
+                        <div class="list-content-item c">
+                            <p>Kumamoto University (Kumamoto, Japan) - Master</br>
+                                04/2015 ~ 03/2017
+                            </p>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="list-contents">
+                        <div>
+                            <div class="list-circle  current-status"></div>
+                            <div class="list-vertical-line"></div>
+                        </div>
+                        <div class="list-content-item ">
+                            <p>Flinders University(Adelaide, Australia) - Master</br>
+                                02/2023 ~
+                            </p>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="items" id="working-experience">
+                <div class="h2-title">
+                    <div class="h2-blocks">
+                        <div class="h2-left-top-block"></div>
+                        <div class="h2-right-bottom-block"></div>
+                    </div>
+                    <h2 id="item-2">Work Experience</h2>
+                </div>
+                <div class="list-contents-block">
+                    <div class="list-contents">
+                        <div>
+                            <div class="list-circle current-status"></div>
+                            <div class="list-vertical-line"></div>
+                        </div>
+                        <div class="list-content-item">
+                            <p>Mitsubishi Electric (Aichi, Japan) - Software Engineer</br>
+                                04/2017 ~ 03/2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="items" id="portfolios">
+                <div class="h2-title">
+                    <div class="h2-blocks">
+                        <div class="h2-left-top-block"></div>
+                        <div class="h2-right-bottom-block"></div>
+                    </div>
+                    <h2 id="item-3">Portfolio (Works)</h2>
+                </div>
+                <div id="portfolio-projects">
+                    <div class="portfolio-prj" id="prj-1">
+                        <div id="img-work-1-frame">
+                            <p id="img-work-1-title">Adelaide</p>
+                            <img id="img-work-1" src="resources/img/Adelaide.jpg">
+                        </div>
+                    </div>
+                    <div class="portfolio-prj" id="prj-2"></div>
+                    <div class="portfolio-prj" id="prj-3"></div>
+                </div>
+            </div>
+            -->
+            <div class="items" id="certificates">
+                <div class="h2-title">
+                    <div class="h2-blocks">
+                        <div class="h2-left-top-block"></div>
+                        <div class="h2-right-bottom-block"></div>
+                    </div>
+                    <h2 id="item-4">Certificates</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li>Responsive Web Design by freeCodeCamp Dec 21. 2023</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="items" id="language">
+                <div class="h2-title">
+                    <div class="h2-blocks">
+                        <div class="h2-left-top-block"></div>
+                        <div class="h2-right-bottom-block"></div>
+                    </div>
+                    <h2 id="item-5">Language</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li>Japanese (Native)</li>
+                        <li>Intermediate (PTE 58)</li>
+                        <li>Mandarine (Beginner)</li>
+                    </ul>
+                </div>
+            </div>
+            
         </main>
         <footer>
             <div id="social-media"></div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
